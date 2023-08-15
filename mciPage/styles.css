@@ -1,0 +1,348 @@
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+.header{
+    width: 100vw;
+    height: 200px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    /*opacity: .9;*/
+    transition: tranform 0.2s;
+    /*background-image: url("pics/blackDrop2.jpg");
+    background-size: cover;*/
+    
+}
+
+.header-hidden{
+    transform: translateY(-200px);
+
+}
+
+.items{
+    display: flex;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 3rem;
+    color: white;
+    align-items:center;
+    font-family: 'Vina Sans', cursive;
+    font-weight: 400;
+}
+
+.items>a{
+    margin: 15px;
+}
+
+.items>a:hover{
+    text-shadow: 2px 2px 2px white;
+}
+
+.mciLogo{
+    margin-top: -100px;
+    width: 20vw;
+    height: auto;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    background-color:none;
+    border: 2px white solid;
+    border-radius: 50%;   
+
+}
+
+.circle:hover{
+    background-color: white;
+}
+
+.socials{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+}
+
+
+/*Hero*/
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url("pics/misc/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*Squad*/
+
+.squad-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Vina Sans', cursive;
+    font-size: 55px;
+    margin: 40px;
+    color: rgb(138, 6, 6)
+}
+
+.squad{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.artist{
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+    
+}
+
+.artist-logo{
+    width: 300px;
+    height: auto;
+}
+
+/*Videos*/
+
+.videos{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(138, 6, 6);
+}
+.video-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 55px;
+    margin: 40px;
+    font-family: 'Vina Sans', cursive;
+    color: white;
+}
+
+.vid-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.vid-block{
+    display: flex;
+    flex-direction: column;
+}
+
+iframe{
+    border-radius: 25px;
+}
+
+.description{
+    color: white;
+    font-family: 'Vina Sans', cursive;
+    font-size: 25px;
+    align-items: center;
+}
+
+.more{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.more-button{
+    width: 125px;
+    height: 50px;
+    font-family: 'Vina Sans', cursive;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    border: black 1px solid;
+    
+}
+
+.vid{
+    background-color: white ;
+    color: rgb(138, 6, 6);
+
+}
+
+.more-button:hover{
+    box-shadow: 10px 10px 10px black;
+    padding: 0px;
+    font-size: 30px;
+}
+
+/*Albums*/
+.albums{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.album-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 55px;
+    margin: 40px;
+    font-family: 'Vina Sans', cursive;
+    color: rgb(138, 6, 6)
+}
+
+.album-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.album-block{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.album-cover{
+    width:300px;
+    height: 300px;
+    border: 1px black solid;
+}
+
+.name{
+    font-size: 25px;
+    font-family: 'Vina Sans', cursive;
+    color: rgb(138, 6, 6)
+    
+}
+
+.listen-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.listen-now{
+    width: 125px;
+    height: 50px;
+    font-family: 'Vina Sans', cursive;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    border: black 1px solid;
+    background-color: rgb(138, 6, 6);
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.listen-now:hover{
+    box-shadow: 10px 10px 10px black;
+    padding: 0px;
+    font-size: 30px;
+}
+
+.alb{
+    background-color: rgb(138, 6, 6);
+    color: white;
+    
+}
+
+/*Store*/
+.store{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(138, 6, 6);
+}
+.store-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 55px;
+    margin: 40px;
+    font-family: 'Vina Sans', cursive;
+    color: white;
+}
+
+.store-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.store-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.shirt{
+    width: auto;
+    height: 250px;
+}
+
+.shirt-description{
+    font-size: 25px;
+    font-family: 'Vina Sans', cursive;
+    color: white;
+}
+
+.price{
+    font-size: 20px;
+    color: white;
+}
+
+/*Footer*/
+.footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+
+}
